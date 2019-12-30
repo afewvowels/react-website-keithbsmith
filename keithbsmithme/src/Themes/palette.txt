@@ -1,0 +1,5 @@
+Gunmetal: #2D3142
+Silver: #BFC0C0
+Baby Powder: #FDFDFD
+Light Red Ochre: ##EF8354
+Black Coral: #4F5D75
