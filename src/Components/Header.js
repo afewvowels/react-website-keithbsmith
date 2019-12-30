@@ -22,9 +22,9 @@ const RightSide = styled.span`
     align-items: center;
     height: 100%;
 
-    span {
+    > span {
         height: 100%;
-        div {
+        > div {
             height: 33.333%;
         }
     }
