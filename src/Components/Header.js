@@ -45,6 +45,7 @@ const StyledNav = styled.nav`
 const StyledLink = styled(Link)`
     text-decoration: none;
     padding: 1rem;
+    color: ${props => props.theme.color.textColor};
 
     &:visited, &:active {
         color: ${props => props.theme.color.textColor};
@@ -64,9 +65,10 @@ const Header = (props) => {
                 <StyledNav>
                     <ul>
                         <li><StyledLink to={'/'}>Home</StyledLink></li>
+                        <li><StyledLink to={'/about'}>About</StyledLink></li>
+                        <li><StyledLink to={'/code'}>Code</StyledLink></li>
                         <li><StyledLink to={'/games'}>Games</StyledLink></li>
-                        <li><StyledLink to={'/games'}>Games</StyledLink></li>
-                        <li><StyledLink to={'/games'}>Games</StyledLink></li>
+                        <li><StyledLink to={'/contact'}>Contact</StyledLink></li>
                     </ul>
                 </StyledNav>
                 <span>

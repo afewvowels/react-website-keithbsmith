@@ -21,7 +21,10 @@ import Header from '../Components/Header.js';
 import Footer from '../Components/Footer.js';
 
 import Home from './Home.js';
+import About from './About.js';
+import Code from './Code.js';
 import Games from './Games.js';
+import Contact from './Contact.js';
 
 const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Bungee|IBM+Plex+Mono&display=swap');
@@ -186,7 +189,10 @@ export default function Layout() {
                     setFontSize={setFontSize}
                 />
                 <Route exact path='/' component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/code' component={Code} />
                 <Route path='/games' component={Games} />
+                <Route path='/contact' component={Contact} />
                 <Footer />
             </ThemeProvider>
         </Router>

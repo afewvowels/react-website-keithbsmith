@@ -21,6 +21,7 @@ const StyledList = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+    top: 1rem;
     background-color: ${props => props.theme.color.secondary};
     color: ${props => props.theme.color.background};
     z-index: 10;

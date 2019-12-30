@@ -1,7 +1,7 @@
 export default {
-    background: "#2d3142",
-    textColor: "#fdfdfd",
-    highlight: "#ef8354",
-    secondary: "#bfc0c0",
-    tertiary: "#4f5d75"
+    background: "#526675",
+    textColor: "#F8ECC4",
+    highlight: "#86A176",
+    secondary: "#C0CC87",
+    tertiary: "#637372"
 }
