@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Dropdown from '../Components/Dropdown.js';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const HeaderElem = styled.header`
     display: flex;
@@ -34,6 +34,10 @@ const StyledDropdown = styled(Dropdown)`
 `;
 
 const StyledNav = styled.nav`
+    display: flex;
+    height: 100%;
+    align-items: center;
+
     ul {
         margin: 0;
         padding: 0;
@@ -44,8 +48,23 @@ const StyledNav = styled.nav`
     @media (max-width: 1000px)
     {
         ul {
-            display: none;
+            display: ${props => (props.visible ? 'visible' : 'none')}
         }
+    }
+`;
+
+const Hamburger = styled.div`
+    width: 3.25rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    span {
+        width: 2.5rem;
+        height: 0.25rem;
+        background-color: ${props => props.theme.color.textColor};
+        color: ${props => props.theme.color.textColor};
     }
 `;
 
@@ -63,11 +82,20 @@ const StyledLink = styled(Link)`
 `;
 
 const Header = (props) => {
+    const [visibleNav, toggleNav] = useState(false);
+    const toggle = () => {
+        toggleNav(visibleNav => !visibleNav);
+    }
     return(
         <HeaderElem>
             <Title>Keith B Smith</Title>
             <RightSide>
-                <StyledNav>
+                <StyledNav visible={visibleNav}>
+                    <Hamburger onClick={toggle}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </Hamburger>
                     <ul>
                         <li><StyledLink to={'/'}>Home</StyledLink></li>
                         <li><StyledLink to={'/about'}>About</StyledLink></li>

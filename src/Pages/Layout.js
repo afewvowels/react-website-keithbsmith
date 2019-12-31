@@ -27,7 +27,7 @@ import Games from './Games.js';
 import Contact from './Contact.js';
 
 const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Bungee|IBM+Plex+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Kulim+Park|IBM+Plex+Mono&display=swap');
 
     body, html {
         cursor: default;

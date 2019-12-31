@@ -1,4 +1,4 @@
 export default {
-    display: "'Bungee', cursive",
+    display: "'Kulim Park', sans-serif",
     body: "'IBM Plex Mono', monospace"
 }
