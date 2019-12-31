@@ -46,6 +46,20 @@ const GlobalStyles = createGlobalStyle`
             'header' 5rem
             'content' auto
             'footer' 4rem;
+        justify-items: center;
+        
+        > header, > footer, > main {
+            width: 1168px;
+        }
+    }
+
+    @media (max-width: 1168px)
+    {
+        #root {
+            > header, > footer, > main {
+                width: 100%;
+            }
+        }
     }
 `;
 
@@ -56,7 +70,7 @@ export default function Layout() {
         {
             id: 0,
             title: 'Default',
-            selected: false,
+            selected: true,
             call: 'defaultTheme'
         },
         {
@@ -89,7 +103,7 @@ export default function Layout() {
         {
             id: 0,
             title: 'Default',
-            selected: false,
+            selected: true,
             call: 'defaultFonts'
         },
         {
@@ -136,7 +150,7 @@ export default function Layout() {
         {
             id: 1,
             title: 'Default',
-            selected: false,
+            selected: true,
             call: 'defaultSize'
         },
         {

@@ -7,12 +7,10 @@ const StyledFooter = styled.footer`
     justify-content: center;
 `;
 
-function Footer() {
+export default function Footer() {
     return(
         <StyledFooter>
-            <h6>&copy;2019 Keith B Smith</h6>
+            <h6>&copy;2020 Keith B Smith</h6>
         </StyledFooter>
     );
 }
-
-export default Footer;

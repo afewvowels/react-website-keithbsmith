@@ -40,6 +40,13 @@ const StyledNav = styled.nav`
         display: flex;
         list-style: none;
     }
+
+    @media (max-width: 1000px)
+    {
+        ul {
+            display: none;
+        }
+    }
 `;
 
 const StyledLink = styled(Link)`
@@ -55,9 +62,7 @@ const StyledLink = styled(Link)`
     }
 `;
 
-
 const Header = (props) => {
-
     return(
         <HeaderElem>
             <Title>Keith B Smith</Title>
