@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
 export default function Footer() {
     return(
         <StyledFooter>
-            <h6>&copy;2020 Keith B Smith</h6>
+            <h6>&copy;{(new Date().getFullYear())} Keith B Smith</h6>
         </StyledFooter>
     );
 }

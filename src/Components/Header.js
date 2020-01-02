@@ -47,24 +47,40 @@ const StyledNav = styled.nav`
 
     @media (max-width: 1000px)
     {
+        width: 4rem;
         ul {
-            display: ${props => (props.visible ? 'visible' : 'none')}
+            width: 15rem;
+            display: ${props => (props.visible ? 'flex' : 'none')};
+            flex-direction: column;
+            position: absolute;
+            top: 5rem;
+            background-color: ${props => props.theme.color.textColor};
+
+            li {
+                padding: 0.5rem 0 0.5rem 0.5rem;
+            }
         }
     }
 `;
 
 const Hamburger = styled.div`
-    width: 3.25rem;
-    height: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    span {
-        width: 2.5rem;
-        height: 0.25rem;
-        background-color: ${props => props.theme.color.textColor};
-        color: ${props => props.theme.color.textColor};
+    display: none;
+
+    @media (max-width: 1000px) {
+        cursor: pointer;
+        width: 4rem;
+        height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        span {
+            width: 2.25rem;
+            height: 0.25rem;
+            background-color: ${props => props.theme.color.textColor};
+            color: ${props => props.theme.color.textColor};
+        }
     }
 `;
 
@@ -78,6 +94,18 @@ const StyledLink = styled(Link)`
     }
     &:hover {
         color: ${props => props.theme.color.highlight};
+    }
+
+    @media (max-width: 1000px) {
+        color: ${props => props.theme.color.background};
+        padding: 0;
+
+        &:visited, &:active {
+            color: ${props => props.theme.color.background};
+        }
+        &:hover {
+            color: ${props => props.theme.color.highlight};
+        }
     }
 `;
 
