@@ -126,7 +126,6 @@ const Header = (props) => {
                     </Hamburger>
                     <ul>
                         <li><StyledLink to={'/'}>Home</StyledLink></li>
-                        <li><StyledLink to={'/about'}>About</StyledLink></li>
                         <li><StyledLink to={'/code'}>Code</StyledLink></li>
                         <li><StyledLink to={'/games'}>Games</StyledLink></li>
                         <li><StyledLink to={'/contact'}>Contact</StyledLink></li>

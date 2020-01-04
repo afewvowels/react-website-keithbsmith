@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import onClickOutside from 'react-onclickoutside';
 
 const Wrapper = styled.div`
     width: 8rem;
@@ -38,7 +39,7 @@ const StyledItem = styled.li`
     justify-content: flex-start;
 `;
 
-export default class Dropdown extends Component {
+class Dropdown extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -87,3 +88,5 @@ export default class Dropdown extends Component {
         );
     }
 }
+
+export default onClickOutside(Dropdown);

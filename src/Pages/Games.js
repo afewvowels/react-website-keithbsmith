@@ -8,7 +8,7 @@ export default function Games() {
                 <title>Keith B Smith | Programmer | Games</title>
                 <meta name='description' content='Games page of the Keith B. Smith website' />
             </Helmet>
-            <h1>Games</h1>
+            <h1><a href="https://keithbsmith.me/ysu/games/" target="_blank">Games</a></h1>
         </main>
     );
 }

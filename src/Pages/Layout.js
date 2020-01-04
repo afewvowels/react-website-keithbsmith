@@ -21,7 +21,6 @@ import Header from '../Components/Header.js';
 import Footer from '../Components/Footer.js';
 
 import Home from './Home.js';
-import About from './About.js';
 import Code from './Code.js';
 import Games from './Games.js';
 import Contact from './Contact.js';
@@ -29,7 +28,8 @@ import Contact from './Contact.js';
 const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Kulim+Park|IBM+Plex+Mono&display=swap');
 
-    body, html {
+    body,
+    html {
         cursor: default;
         margin: 0;
         padding: 0;
@@ -48,7 +48,9 @@ const GlobalStyles = createGlobalStyle`
             'footer' 4rem;
         justify-items: center;
         
-        > header, > footer, > main {
+        > header,
+        > footer,
+        > main {
             width: 1168px;
         }
     }
@@ -203,7 +205,6 @@ export default function Layout() {
                     setFontSize={setFontSize}
                 />
                 <Route exact path='/' component={Home} />
-                <Route path='/about' component={About} />
                 <Route path='/code' component={Code} />
                 <Route path='/games' component={Games} />
                 <Route path='/contact' component={Contact} />
